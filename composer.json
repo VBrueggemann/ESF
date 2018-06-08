@@ -2,7 +2,7 @@
     "name": "brueggemann/esf",
     "description": "Event Sourcing Foundation",
     "type": "foundation",
-    "license": "GPL",
+    "license": "MIT",
     "authors": [
         {
             "name": "Valentin Brueggemann",
