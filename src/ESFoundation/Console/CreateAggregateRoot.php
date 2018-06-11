@@ -94,7 +94,7 @@ class CreateAggregateRoot extends Command
 
         foreach ($this->option('event') as $event) {
             $imports = $imports . '
-    use App\\ES\\Events\\' . $event . ';';
+use App\\ES\\Events\\' . $event . ';';
         }
 
         $compiledStub = str_replace('{{imports}}', $imports, $compiledStub);

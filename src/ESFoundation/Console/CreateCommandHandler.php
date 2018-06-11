@@ -88,6 +88,11 @@ use ESFoundation\ES\Contracts\EventBus;';
 use ESFoundation\ES\Contracts\AggregateProjectionRepository;';
         }
 
+        foreach ($this->option('command') as $command) {
+            $imports = $imports . '
+use App\\ES\\Commands\\' . $command . ';';
+        }
+
         $compiledStub = str_replace('{{imports}}', $imports, $compiledStub);
 
         $content =

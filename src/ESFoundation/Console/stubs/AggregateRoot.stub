@@ -2,8 +2,7 @@
 namespace {{namespace}}ES\Events\Aggregates;
 
 use ESFoundation\ES\EventSourcedAggregateRoot as AggregateRootContract;
-use ESFoundation\ES\ValueObjects\AggregateRootProjection;
-{{imports}}
+use ESFoundation\ES\ValueObjects\AggregateRootProjection;{{imports}}
 
 class {{name}} extends AggregateRootContract
 {
