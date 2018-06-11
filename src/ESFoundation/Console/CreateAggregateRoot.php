@@ -90,6 +90,15 @@ class CreateAggregateRoot extends Command
         $compiledStub = str_replace('{{name}}', $this->option('name'), $compiledStub);
         $compiledStub = str_replace('{{namespace}}', $this->option('namespace') ?? app()->getNamespace(), $compiledStub);
 
+        $imports = '';
+
+        foreach ($this->option('event') as $event) {
+            $imports = $imports . '
+    use App\\ES\\Events\\' . $event . ';';
+        }
+
+        $compiledStub = str_replace('{{imports}}', $imports, $compiledStub);
+
         $content = '';
         foreach ($this->option('event') as $event) {
              $content = $content . '
