@@ -2,6 +2,11 @@
 
 namespace ESFoundation\ServiceProviders;
 
+use ESFoundation\CQRS\Contracts\CommandBus;
+use ESFoundation\ES\Contracts\AggregateProjectionRepository;
+use ESFoundation\ES\Contracts\EventBus;
+use ESFoundation\ES\Contracts\EventStore;
+use ESFoundation\ES\Contracts\QueryRepository;
 use Illuminate\Support\Facades\Facade;
 
 

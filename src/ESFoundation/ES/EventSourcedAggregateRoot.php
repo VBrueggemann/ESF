@@ -2,6 +2,7 @@
 
 namespace ESFoundation\ES;
 
+use ESF;
 use ESFoundation\ES\Contracts\AggregateRoot;
 use ESFoundation\ES\Errors\AggregateMismatch;
 use ESFoundation\ES\Errors\FailedApplication;
@@ -119,5 +120,11 @@ abstract class EventSourcedAggregateRoot implements AggregateRoot
         }
 
         return $validator;
+    }
+
+    public static function load(AggregateRootId $aggregateRootId, int $playhead = 0)
+    {
+        $aggregateProjectionRepository = ESF::aggregateProjectionRepository();
+        return $aggregateProjectionRepository->load($aggregateRootId, get_called_class(), $playhead);
     }
 }
