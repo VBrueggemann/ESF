@@ -8,6 +8,7 @@ use ESFoundation\Console\CreateAggregateRootValidator;
 use ESFoundation\Console\CreateCommand;
 use ESFoundation\Console\CreateCommandHandler;
 use ESFoundation\Console\CreateEvent;
+use ESFoundation\Console\CreateValueObject;
 use ESFoundation\CQRS\Contracts\CommandBus;
 use ESFoundation\CQRS\InMemorySynchronusCommandBus;
 use ESFoundation\ES\Contracts\AggregateProjectionRepository;
@@ -40,7 +41,8 @@ class ESFoundationServiceProvider extends ServiceProvider
             CreateAggregateRoot::class,
             CreateEvent::class,
             CreateAggregateRootValidator::class,
-            CreateAggregateRootProjection::class
+            CreateAggregateRootProjection::class,
+            CreateValueObject::class,
         ]);
 
         $this->app->singleton(QueryRepository::class, function ($app) {
