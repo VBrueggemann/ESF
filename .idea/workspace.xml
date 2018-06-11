@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ad8f742-89dd-4a32-b421-0267dc38175d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/AggregateRepositoryUnitTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/AggregateRootUnitTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/CommandBusUnitTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/CommandUnitTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/EventBusUnitTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/EventSourcedTestAggregateRoot.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/EventSourcedTestAggregateRootProjection.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/EventSourcedTestAggregateRootValidator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/EventStoreUnitTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/EventUnitTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/ExampleTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/IntegrationTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/PerformanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/QueryUnitTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/RedisAggregateRepositoryUnitTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/RedisEventBusUnitTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/RedisEventStoreUnitTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/TestCase.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/TestCommand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/TestCommandHandler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/TestEvent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/TestEventListener.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/TestJob.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/TestRedisEventListener.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/TestRedisListenerJob.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/TestValueObject.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TestJob.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/TestJob.php">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="0">
+              <caret line="0" column="6" lean-forward="true" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -68,8 +43,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/ESFoundation/ServiceProviders/ESFoundationServiceProvider.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -131,16 +107,6 @@
       </pane>
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Live" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.library.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Live" />
@@ -252,18 +218,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528473551270</updated>
-      <workItem from="1528473552741" duration="562000" />
+      <workItem from="1528473552741" duration="1614000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="562000" />
+    <option name="totallyTimeSpent" value="1614000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="592" y="-1200" width="1920" height="1200" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -295,14 +260,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" lean-forward="true" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ESFoundation/ServiceProviders/ESFoundationServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -339,8 +296,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/TestJob.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        <state relative-caret-position="551">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <marker date="1528275548000" expanded="false" signature="29:89" ph="..." />
+            <marker date="1528275548000" expanded="true" signature="116:394" ph="{...}" />
+            <marker date="1528275548000" expanded="true" signature="184:225" ph="{...}" />
+            <marker date="1528275548000" expanded="true" signature="287:392" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <marker date="1528708653352" expanded="true" signature="0:875" ph="{&quot;name&quot;: &quot;brueggemann/esf&quot;...}" />
+            <marker date="1528708653352" expanded="true" signature="144:269" ph="[...]" />
+            <marker date="1528708653352" expanded="true" signature="154:263" ph="{&quot;name&quot;: &quot;Valentin Brueggemann&quot;...}" />
+            <marker date="1528708653352" expanded="true" signature="318:494" ph="{&quot;php&quot;: &quot;&gt;=7.1.3&quot;...}" />
+            <marker date="1528708653352" expanded="true" signature="515:742" ph="{&quot;fzaninotto/faker&quot;: &quot;~1.4&quot;...}" />
+            <marker date="1528708653352" expanded="true" signature="760:846" ph="{...}" />
+            <marker date="1528708653352" expanded="true" signature="779:840" ph="{&quot;ESFoundation\&quot;: &quot;src/esfoundation/&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="6" lean-forward="true" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
           <folding />
         </state>
       </provider>
