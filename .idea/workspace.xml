@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ad8f742-89dd-4a32-b421-0267dc38175d" name="Default" comment="" />
+    <list default="true" id="5ad8f742-89dd-4a32-b421-0267dc38175d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/AggregateRepositoryUnitTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/AggregateRootUnitTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/CommandBusUnitTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/CommandUnitTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/EventBusUnitTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/EventSourcedTestAggregateRoot.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/EventSourcedTestAggregateRootProjection.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/EventSourcedTestAggregateRootValidator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/EventStoreUnitTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/EventUnitTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/ExampleTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/IntegrationTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/PerformanceTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/QueryUnitTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/RedisAggregateRepositoryUnitTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/RedisEventBusUnitTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/RedisEventStoreUnitTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/TestCase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/TestCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/TestCommandHandler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/TestEvent.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/TestEventListener.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/TestJob.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/TestRedisEventListener.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/TestRedisListenerJob.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/TestValueObject.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,11 +50,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ESFoundationServiceProvider.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ESFoundation/ServiceProviders/ESFoundationServiceProvider.php">
+      <file leaf-file-name="TestJob.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/TestJob.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+            <state relative-caret-position="232">
+              <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -36,6 +64,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/ESFoundation/ServiceProviders/ESFoundationServiceProvider.php" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -65,7 +101,34 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Live">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Live">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT=".idea">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -74,8 +137,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Live" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.jetbrains.php.config.library.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -85,36 +148,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Live" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ESFoundation" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Live" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Live" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ESFoundation" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ServiceProviders" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -129,6 +162,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -141,6 +179,69 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -151,15 +252,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528473551270</updated>
-      <workItem from="1528473552741" duration="22000" />
+      <workItem from="1528473552741" duration="562000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22000" />
+    <option name="totallyTimeSpent" value="562000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="592" y="-1200" width="1920" height="1200" extended-state="6" />
+    <frame x="592" y="-1200" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -188,14 +289,58 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="true" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ESFoundation/ServiceProviders/ESFoundationServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+        <state relative-caret-position="290">
+          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <marker date="1528706812511" expanded="false" signature="53:1041" ph="..." />
+            <marker date="1528706812511" expanded="true" signature="1100:3410" ph="{...}" />
+            <marker date="1528706812511" expanded="true" signature="1110:1185" ph=" Register the application services. ..." />
+            <marker date="1528706812511" expanded="true" signature="1218:3255" ph="{...}" />
+            <marker date="1528706812511" expanded="true" signature="1250:1506" ph="..." />
+            <marker date="1528706812511" expanded="true" signature="1251:1505" ph="..." />
+            <marker date="1528706812511" expanded="true" signature="1540:1796" ph="..." />
+            <marker date="1528706812511" expanded="true" signature="1581:1795" ph="..." />
+            <marker date="1528706812511" expanded="true" signature="1638:1785" ph="..." />
+            <marker date="1528706812511" expanded="true" signature="1830:2075" ph="..." />
+            <marker date="1528706812511" expanded="true" signature="1866:2074" ph="..." />
+            <marker date="1528706812511" expanded="true" signature="1918:2064" ph="..." />
+            <marker date="1528706812511" expanded="true" signature="2109:2483" ph="..." />
+            <marker date="1528706812511" expanded="true" signature="2164:2482" ph="..." />
+            <marker date="1528706812511" expanded="true" signature="2225:2472" ph="..." />
+            <marker date="1528706812511" expanded="true" signature="2517:2813" ph="..." />
+            <marker date="1528706812511" expanded="true" signature="2551:2812" ph="..." />
+            <marker date="1528706812511" expanded="true" signature="2601:2802" ph="..." />
+            <marker date="1528706812511" expanded="true" signature="2847:3033" ph="..." />
+            <marker date="1528706812511" expanded="true" signature="2883:3032" ph="..." />
+            <marker date="1528706812511" expanded="true" signature="2935:3022" ph="..." />
+            <marker date="1528706812511" expanded="true" signature="3062:3126" ph="..." />
+            <marker date="1528706812511" expanded="true" signature="3086:3125" ph="..." />
+            <marker date="1528706812511" expanded="true" signature="3165:3248" ph="..." />
+            <marker date="1528706812511" expanded="true" signature="3283:3408" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/TestJob.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
           <folding />
         </state>
       </provider>
