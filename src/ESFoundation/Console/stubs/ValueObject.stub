@@ -1,0 +1,12 @@
+<?php
+namespace {{namespace}}ES\Events\Aggregates;
+
+use ESFoundation\ValueObjects\ValueObject as ValueObjectContract;
+
+class {{name}} extends ValueObject {
+
+    public static function rules(): string
+    {
+        return '';
+    }
+}
