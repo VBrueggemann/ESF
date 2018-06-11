@@ -45,6 +45,12 @@ abstract class GroupedValueObject
         $valueObjectClass = static::valueObjects()->get($key);
         $this->values->put($key, new $valueObjectClass($value));
     }
+
+    public function __set($key, $value)
+    {
+        $valueObjectClass = static::valueObjects()->get($key);
+        $this->values->put($key, new $valueObjectClass($value));
+    }
     
     public function raw($name)
     {

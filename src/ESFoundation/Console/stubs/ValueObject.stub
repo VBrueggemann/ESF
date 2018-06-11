@@ -3,7 +3,7 @@ namespace {{namespace}}ES\Events\Aggregates;
 
 use ESFoundation\ValueObjects\ValueObject as ValueObjectContract;
 
-class {{name}} extends ValueObject {
+class {{name}} extends ValueObjectContract {
 
     public static function rules(): string
     {
