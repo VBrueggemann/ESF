@@ -18,4 +18,10 @@ abstract class Command implements PayloadableContract
     {
         $this->setPayload($payload, InvalidCommandPayloadException::class);
     }
+
+    public static function with($payload = null)
+    {
+        $self = get_called_class();
+        return new $self($payload);
+    }
 }

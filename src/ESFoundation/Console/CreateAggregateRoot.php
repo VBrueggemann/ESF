@@ -102,9 +102,9 @@ use App\\ES\\Events\\' . $event . ';';
         $content = '';
         foreach ($this->option('event') as $event) {
              $content = $content . '
-     public function applyThat' . $event .'(' . $event . ' $event, AggregateRootProjection $aggregateRootProjection)
+     public static function applyThat' . $event .'(' . $event . ' $event, AggregateRootProjection $aggregateRootProjection): bool
      {
-     
+        return true;
      }
      ';
         }

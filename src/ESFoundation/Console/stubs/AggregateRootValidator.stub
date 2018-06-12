@@ -1,7 +1,7 @@
 <?php
 namespace {{namespace}}ES\Events\Aggregates;
 
-use ESFoundation\ES\Contracts as AggregateRootValidatorContract;
+use ESFoundation\ES\Contracts\AggregateRootValidator as AggregateRootValidatorContract;
 use ESFoundation\ES\ValueObjects\AggregateRootProjection;
 use ESFoundation\ES\DomainEvent;
 
