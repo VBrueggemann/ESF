@@ -45,7 +45,10 @@ abstract class AggregateRootProjection extends GroupedValueObject
     {
         $json = json_decode(unserialize($serialized), true);
         $class = $json['class'];
-        return new $class(new AggregateRootId($json['aggregateRootId']), collect($json['values']));
+        $playhead = $json['playhead'];
+        $projection = new $class(new AggregateRootId($json['aggregateRootId']), collect($json['values']));
+        $projection->setPlayhead($playhead);
+        return $projection;
     }
 
     public function popUncommittedEvents(): DomainEventStream
