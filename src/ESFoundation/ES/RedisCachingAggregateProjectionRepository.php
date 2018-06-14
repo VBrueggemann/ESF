@@ -35,7 +35,7 @@ class RedisCachingAggregateProjectionRepository implements AggregateProjectionRe
 
         if (($cachedSerialized = $redis->get($aggregateRootId->value))) {
             $cachedAggregate = AggregateRootProjection::deserialize($cachedSerialized);
-            $unappliedEvents = $this->eventStore->get($aggregateRootId, $cachedAggregate->getPlayhead + 1);
+            $unappliedEvents = $this->eventStore->get($aggregateRootId, $cachedAggregate->getPlayhead() + 1);
             if ($unappliedEvents->isNotEmpty()) {
                 $aggregateRootClass::represent($unappliedEvents, $cachedAggregate, false);
                 $redis->set($aggregateRootId->value, $cachedAggregate->serialize());

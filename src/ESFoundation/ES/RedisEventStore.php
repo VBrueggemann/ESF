@@ -41,6 +41,7 @@ class RedisEventStore implements EventStore
             }
 
             $redis->rpush($aggregateRootId, $domainEvent->serialize());
+            $redis->rpush('all', $domainEvent->serialize());
             $nextPlayhead = $nextPlayhead + 1;
         }
         return $redis->exec();
@@ -51,6 +52,22 @@ class RedisEventStore implements EventStore
         $redis = Redis::connection('events');
 
         $redisList = $redis->lrange($aggregateRootId->value, $playhead, -1);
+
+        $stream = DomainEventStream::make();
+
+        foreach ($redisList as $redisElement) {
+            $storageEvent = DomainStorageEvent::fromJson($aggregateRootId, unserialize($redisElement));
+            $stream->push(DomainEvent::deserializePayload($storageEvent));
+        }
+
+        return $stream;
+    }
+
+    public function getAll(int $start = 0): DomainEventStream
+    {
+        $redis = Redis::connection('events');
+
+        $redisList = $redis->lrange('all', $start, -1);
 
         $stream = DomainEventStream::make();
 

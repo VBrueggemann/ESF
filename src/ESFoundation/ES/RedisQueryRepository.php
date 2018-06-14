@@ -18,7 +18,8 @@ class RedisQueryRepository implements QueryRepository
         $redis = Redis::connection('queries');
 
         if ($index < 0) {
-            return $redis->lrange($key, 0, 0);
+            $lastElement = $redis->lrange($key, 0, 0);
+            return empty($lastElement) ? '' : $lastElement[0];
         }
 
         return $redis->lrange($key, 0, $index);

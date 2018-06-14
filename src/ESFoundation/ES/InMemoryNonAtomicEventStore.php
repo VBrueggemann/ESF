@@ -63,4 +63,14 @@ class InMemoryNonAtomicEventStore implements EventStore
             )
         );
     }
+    
+    public function getAll(int $start = 0): DomainEventStream
+    {
+        $stream = DomainEventStream::make();
+        foreach ($this->events as $aggregates) {
+            foreach ($aggregates as $events) {
+                $stream->concat($events);
+            }
+        }
+    }
 }
