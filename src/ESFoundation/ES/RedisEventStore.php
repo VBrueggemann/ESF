@@ -72,7 +72,10 @@ class RedisEventStore implements EventStore
         $stream = DomainEventStream::make();
 
         foreach ($redisList as $redisElement) {
-            $storageEvent = DomainStorageEvent::fromJson($aggregateRootId, unserialize($redisElement));
+            $storageEvent = DomainStorageEvent::fromJson(
+                new AggregateRootId(json_decode(unserialize($redisElement))->aggregate_root_id)
+                , unserialize($redisElement)
+            );
             $stream->push(DomainEvent::deserializePayload($storageEvent));
         }
 
