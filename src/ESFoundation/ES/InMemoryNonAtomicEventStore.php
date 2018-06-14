@@ -63,7 +63,7 @@ class InMemoryNonAtomicEventStore implements EventStore
             )
         );
     }
-    
+
     public function getAll(int $start = 0): DomainEventStream
     {
         $stream = DomainEventStream::make();
@@ -72,5 +72,6 @@ class InMemoryNonAtomicEventStore implements EventStore
                 $stream->concat($events);
             }
         }
+        return $stream;
     }
 }
