@@ -88,6 +88,8 @@ $ php artisan make:event
 
 # Usage :
 
+## Commands :
+
 The entrypoint to the Event Sourced part of your application should be a CommandHandler.
 
 ```
@@ -149,6 +151,15 @@ new COMMAND([
 ]);
 ```
 
+It is possible to either retrieve the payload as a whole:
+```
+$COMMAND->getPayload();
+```
+or by key:
+```
+$COMMAND->foo;
+```
+
 A CommandHandler is either called direcly:
 ```
 $commandHandler = app(COMMANDHANDLER::class);
@@ -159,14 +170,82 @@ or using the COMMANDBUS:
 ESF::commandBus()->dispatch(new COMMAND(['foo' => 'bar']));
 ```
 
+## Aggregates :
+
+Aggregates are split into three parts:
+
+- logic: AggregateRoot
+- representation: AggregateRootProjection
+- validation: AggregateRootValidator
+
+```
+$ php artisan make:aggregateRoot -name NAME -event EVENTNAME -event EVENTNAME -projection
+```
+
+If a Validator is needed for the AggregateRoot add:
+```
+$ [...] -validator
+```
+
+In the applyThatEVENT methods of the created AggregateRoot class the data from the $EVENT can be applied to the $AGGREGATEROOTPROJECTION
+```
+$AGGREGATEROOTPROJECTION->foo = $EVENT->bar;
+return true;
+```
+
+The created Event class works similar to the Command class. Rules may be defined, that determine the events payload validation.
+
+If similar Rules are valid both for a Command and an Event it is recommended to use a ValueObject to represent both the rules and a value per instance.
+
+```
+$ php artisan make:valueObject -name NAME
+```
+
+These rules then can be imported into the COMMAND or/and EVENT:
+```
+    public function rules()
+    {
+        return [
+            'foo' => VALUEOBJECT::rules(),
+        ];
+    }
+```
+
+If created the AggregateRootValidator class can prevent an Event on being applied to an AggregateRootProjection by returning false when a given requirement of the AggregateProjection is not fulfilled.
+When the validation fails a FailedValidation exception is thrown.
+
+The created AggregateRootProjection represents a state of an Aggregate. It contains multiple instantiated ValueObjects.
+```
+    public static function valueObjects(): Collection
+    {
+        return collect([
+            'foo' => Foo::class,
+            'foo2'=> Foo::class
+        ]);
+    }
+```
+
+To apply an Event to an AggregateRootProjection using the AggregateRoots logic there are multiple options:
+```
+AGGREGATEROOT::applyOn($AGGREGATEPROJECTION)->that($EVENT); // 1
+
+AGGREGATEROOT::applyThat($EVENT, $AGGREGATEROOTPROJECTION); // 2
+
+$AGGREGATEROOTPROJECTION->applyThat($EVENT);                // 3
+```
+
+In 1 and 2 it is possible to choose the AggregateRoots logic, where in 3 the default logic is used.
 
 
-
-
-
-
-
-
+Every Event that is applied to an AggregateRootProjection is saved and can be retrieved
+```
+$events = $AGGREGATEROOTPROJECTION->popUncommittedEvents();
+```
+These Events then are commitable via the EventBus or if needed directly via the EventStore
+```
+ESF::eventBus()->dispatch($events);
+ESF::eventStore()->push($events);
+```
 
 
 
