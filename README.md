@@ -247,6 +247,8 @@ ESF::eventBus()->dispatch($events);
 ESF::eventStore()->push($events);
 ```
 
+## Queries :
+Since there are no means of retrieving Events or even Aggregates based on a specific pattern, like the where clause in SQL the accumulation of data is done via Queries
 
 
 
