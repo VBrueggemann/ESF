@@ -138,9 +138,9 @@ public function rules()
 ```
 
 A Commands constructor takes any form of payload and validates it against the requirements of the defined rules() method.
-If no rules are defined any payload is acceped. 
-If keys in the payload are not defined in the rules they are thrown out.
-If values in the payload are not passing validation an Exception is thrown.
+- If no rules are defined any payload is acceped. 
+- If keys in the payload are not defined in the rules they are thrown out.
+- If values in the payload are not passing validation an Exception is thrown.
 
 Best is to define a named array as payload:
 ```
