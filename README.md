@@ -271,4 +271,12 @@ $queryRepository->get('foo', 0); //bar
 
 The QueryRepository can be used to save data of long lasting calculations, crawlers or only indirectly persisted data.
 
+## EventListener :
+
+The EventListener is a basic implementation of the listener pattern. Any EventListener needs to be subscribed to the EventBus it is supposed to be listening on.
+A good place to do this is in the AppServiceProvider:
+```
+$eventBus = ESF::eventBus();
+$eventBus->subscribe(app(EVENTLISTENER::class));
+```
 
