@@ -251,8 +251,24 @@ ESF::eventStore()->push($events);
 Since there are no means of retrieving Events or even Aggregates based on a specific pattern, like the where clause in SQL the accumulation of data is done via Queries
 
 
+A Query should represent a page or view. To manage Queries the QueryRepository is needed.
+```
+$queryRepository = ESF::queryReporitory();
+```
 
+The add method saves a key-value pair. If the value is updated, a new entry under the same key is inserted.
+```
+$queryRepository->add('foo', 'bar');
+```
+To retrieve a query the get method is used.
+If only the key is provided, the most recent query is returned.
+If additionally an index is provided, the corresponding older query is returned.
 
+```
+$queryRepository->get('foo'); //bar
+$queryRepository->get('foo', 0); //bar
+```
 
+The QueryRepository can be used to save data of long lasting calculations, crawlers or only indirectly persisted data.
 
 
