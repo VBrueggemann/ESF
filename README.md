@@ -279,4 +279,4 @@ A good place to do this is in the AppServiceProvider:
 $eventBus = ESF::eventBus();
 $eventBus->subscribe(app(EVENTLISTENER::class));
 ```
-
+If synchronus handling of eventdata is required, but cannot be done in an AggregateRoot, this is a good place to create and update a query.
